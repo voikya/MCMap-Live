@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<title>MCMap Live Help</title>
+		<meta name="AppleTitle" content="MCMap Live Help" />
+</head>
+
+<body>
+
+<h2>Some things you might be wondering about MCMap Live</h2>
+
+	<h3>How do I use colors from a texture pack?</h3>
+	<ul>
+		<li>Simply select "Try Colors..." in the Colors submenu and select the terrain.png from any texture pack.</li>
+		<li>You can also load up mcmap colors.txt files the same way.</li>
+	</ul>
+	<h3>Can I save these so they stay in the menu?</h3>
+	<ul>
+		<li>Yes! Add them to the list in "Preferences..."</li>
+		<li>You can add tweaked colors.txt files or texture pack PNGs directly.</li>
+		<li>Double click the name after adding to change it.</li>
+	</ul>
+	<h3>Can I make it so MCMap Live remembers the settings I like?</h3>
+	<ul>
+		<li>Set everything up just how you like it.</li>
+		<li>Open "Preferences..." and press "Set".</li>
+		<li>With no fanfare at all, your current settings are been memorized.</li>
+		<li>You can get rid of your settings at any time by clicking the "Reset" button.</li>
+	</ul>
+	<h3>How can I alter the performance of MCMap Live?</h3>
+	<ul>
+		<li>You may tweak the number of threads MCMap Live will use at once.</li>
+		<li>Open "Preferences..." and adjust the Rendering Threads setting.</li>
+		<li>An old machine or one with a slow hard drive will benefit from a setting of 2.</li>
+		<li>Most modern Macs see maximum speed with 4.</li>
+		<li>A Mac Pro or machine with an SSD can handle 8+</li>
+	</ul>
+	<h3>What do the keyboard keys do?</h3>
+	<ul>
+		<li>Cmd + / Cmd - : Zoom in and out in case you have no scroll wheel</li>
+		<li>Cmd 0 : Zoom to 100%</li>
+		<li>Up / Down arrows : Move the depth slider up or down one level</li>
+		<li>t / y : Adjust the  horizontal tile spacing (hold shift for larger steps)</li>
+		<li>g / h : Adjust the  vertical tile spacing (hold shift for larger steps)</li>
+		<li>r : Reset tile spacing</li>
+	</ul>
+	<h3>mcmap lets me export colors as a text file and edit them by hand. Can I do that here?</h3>
+	<ol>
+		<li>Go to the Tools menu and select "Extract Colors from PNG..."</li>
+		<li>An open file dialog will appear. Use this to select the terrain.png of the texture pack you want to use.</li>
+		<li>If MCMap Live likes the file you chose, a save dialog will appear right away. Use this to save a text file containing all the color assignments.</li>
+		<li>In the Options menu, select "Colors", then "Custom Colors..."</li>
+		<li>An open file dialog will appear. Use this to select the text file you just saved.</li>
+		<li>Your map will immediately update with the extracted colors!.</li>
+		<li>Open the text file in a text editor.</li>
+		<li>Locate the line with the block you want to change.</li>
+			<ul><li>The first number on each line is a block ID. <a href="http://www.minecraftwiki.net/wiki/Data_values" target="_blank">This will help you</a>.</li></ul>
+		<li>The second, third, and fourth numbers are the RGB color value of the tile.</li>
+			<ul><li>Make sure all the numbers are integers 0-255. </li>
+			<li><a href="http://www.colorpicker.com/" target="_blank">Use this to pick a color</a>. You can read the RGB values on the bottom right.</li></ul>
+		<li>The fifth value is alpha. 0 is transparent, 255 is opaque.</li>
+		<li>The sixth value is noise level. If you use the noise settings, larger integers are more noise. If you leave noise off, this number has no effect</li> 
+		<ul><li>(But it needs to be there even if it's zero!!)</li>
+	</ol>
+
+</body>
+
+</html>

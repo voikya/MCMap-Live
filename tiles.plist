@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Stone</key>
+	<integer>1</integer>
+	<key>Grass</key>
+	<integer>2</integer>
+	<key>Dirt</key>
+	<integer>3</integer>
+	<key>Cobblestone</key>
+	<integer>4</integer>
+	<key>Wood</key>
+	<integer>5</integer>
+	<key>Sapling</key>
+	<integer>6</integer>
+	<key>Bedrock</key>
+	<integer>7</integer>
+	<key>Water</key>
+	<integer>8</integer>
+	<key>Standing Water</key>
+	<integer>9</integer>
+	<key>Lava</key>
+	<integer>10</integer>
+	<key>Standing Lava</key>
+	<integer>11</integer>
+	<key>Sand</key>
+	<integer>12</integer>
+	<key>Gravel</key>
+	<integer>13</integer>
+	<key>Gold Ore</key>
+	<integer>14</integer>
+	<key>Iron Ore</key>
+	<integer>15</integer>
+	<key>Coal Ore</key>
+	<integer>16</integer>
+	<key>Tree Wood</key>
+	<integer>17</integer>
+	<key>Leaves</key>
+	<integer>18</integer>
+	<key>Sponge</key>
+	<integer>19</integer>
+	<key>Glass</key>
+	<integer>20</integer>
+	<key>Lapis Lazuli Ore</key>
+	<integer>21</integer>
+	<key>Lapis Lazuli Block</key>
+	<integer>22</integer>
+	<key>Dispenser</key>
+	<integer>23</integer>
+	<key>Sandstone</key>
+	<integer>24</integer>
+	<key>Note Block</key>
+	<integer>25</integer>
+	<key>Bed</key>
+	<integer>26</integer>
+	<key>Powered Rail</key>
+	<integer>27</integer>
+	<key>Detector Rail</key>
+	<integer>28</integer>
+	<key>Sticky Piston</key>
+	<integer>29</integer>
+	<key>Cobweb</key>
+	<integer>30</integer>
+	<key>Tall Grass</key>
+	<integer>31</integer>
+	<key>Dead Bush</key>
+	<integer>32</integer>
+	<key>Piston</key>
+	<integer>33</integer>
+	<key>White Wool</key>
+	<integer>35</integer>
+	<key>Orange Wool</key>
+	<integer>240</integer>
+	<key>Magenta Wool</key>
+	<integer>241</integer>
+	<key>Light Blue Wool</key>
+	<integer>242</integer>
+	<key>Yellow Wool</key>
+	<integer>243</integer>
+	<key>Light Green Wool</key>
+	<integer>244</integer>
+	<key>Pink Wool</key>
+	<integer>245</integer>
+	<key>Dark Gray Wool</key>
+	<integer>246</integer>
+	<key>Gray Wool</key>
+	<integer>247</integer>
+	<key>Cyan Wool</key>
+	<integer>248</integer>
+	<key>Purple Wool</key>
+	<integer>249</integer>
+	<key>Blue Wool</key>
+	<integer>250</integer>
+	<key>Brown Wool</key>
+	<integer>251</integer>
+	<key>Dark Green Wool</key>
+	<integer>252</integer>
+	<key>Red Wool</key>
+	<integer>253</integer>
+	<key>Black Wool</key>
+	<integer>254</integer>
+	<key>Dandelion</key>
+	<integer>37</integer>
+	<key>Rose</key>
+	<integer>38</integer>
+	<key>Brown Mushroom</key>
+	<integer>39</integer>
+	<key>Red Mushroom</key>
+	<integer>40</integer>
+	<key>Gold Block</key>
+	<integer>41</integer>
+	<key>Iron Block</key>
+	<integer>42</integer>
+	<key>Double Slabs</key>
+	<integer>43</integer>
+	<key>Slab</key>
+	<integer>44</integer>
+	<key>Brick Block</key>
+	<integer>45</integer>
+	<key>TNT</key>
+	<integer>46</integer>
+	<key>Bookshelf</key>
+	<integer>47</integer>
+	<key>Mossy Cobblestone</key>
+	<integer>48</integer>
+	<key>Obsidian</key>
+	<integer>49</integer>
+	<key>Torch</key>
+	<integer>50</integer>
+	<key>Fire</key>
+	<integer>51</integer>
+	<key>Mob Spawner</key>
+	<integer>52</integer>
+	<key>Woodstairs</key>
+	<integer>53</integer>
+	<key>Chest</key>
+	<integer>54</integer>
+	<key>Redstone</key>
+	<integer>55</integer>
+	<key>Diamond Ore</key>
+	<integer>56</integer>
+	<key>Diamond Block</key>
+	<integer>57</integer>
+	<key>Crafting Table</key>
+	<integer>58</integer>
+	<key>Crop</key>
+	<integer>59</integer>
+	<key>Farmland</key>
+	<integer>60</integer>
+	<key>Furnace</key>
+	<integer>61</integer>
+	<key>Burning Furnace</key>
+	<integer>62</integer>
+	<key>Sign Post</key>
+	<integer>63</integer>
+	<key>Wooden Door</key>
+	<integer>64</integer>
+	<key>Ladder</key>
+	<integer>65</integer>
+	<key>Rails</key>
+	<integer>66</integer>
+	<key>Cobblestone Stairs</key>
+	<integer>67</integer>
+	<key>Wall Sign</key>
+	<integer>68</integer>
+	<key>Lever</key>
+	<integer>69</integer>
+	<key>Stone Pressure Plate</key>
+	<integer>70</integer>
+	<key>Iron Door</key>
+	<integer>71</integer>
+	<key>Wooden Pressure Plate</key>
+	<integer>72</integer>
+	<key>Redstone Ore</key>
+	<integer>73</integer>
+	<key>Glowing Redstone Ore</key>
+	<integer>74</integer>
+	<key>Redstone Torch (off)</key>
+	<integer>75</integer>
+	<key>Redstone Torch (on)</key>
+	<integer>76</integer>
+	<key>Stone Button</key>
+	<integer>77</integer>
+	<key>Snow</key>
+	<integer>78</integer>
+	<key>Ice</key>
+	<integer>79</integer>
+	<key>Snow Block</key>
+	<integer>80</integer>
+	<key>Cactus</key>
+	<integer>81</integer>
+	<key>Clay Block</key>
+	<integer>82</integer>
+	<key>Sugarcane</key>
+	<integer>83</integer>
+	<key>Jukebox</key>
+	<integer>84</integer>
+	<key>Fence</key>
+	<integer>85</integer>
+	<key>Pumpkin</key>
+	<integer>86</integer>
+	<key>Netherrack</key>
+	<integer>87</integer>
+	<key>Soul Sand</key>
+	<integer>88</integer>
+	<key>Glowstone Block</key>
+	<integer>89</integer>
+	<key>Portal</key>
+	<integer>90</integer>
+	<key>Jack-O-Lantern</key>
+	<integer>91</integer>
+	<key>Cake</key>
+	<integer>92</integer>
+	<key>Redstone Repeater (off)</key>
+	<integer>93</integer>
+	<key>Redstone Repeater (on)</key>
+	<integer>94</integer>
+	<key>Locked Chest</key>
+	<integer>95</integer>
+	<key>Trapdoor</key>
+	<integer>96</integer>
+	<key>Hidden Silverfish</key>
+	<integer>97</integer>
+	<key>Stone Bricks</key>
+	<integer>98</integer>
+	<key>Huge Brown Mushroom</key>
+	<integer>99</integer>
+	<key>Huge Red Mushroom</key>
+	<integer>100</integer>
+	<key>Iron Bars</key>
+	<integer>101</integer>
+	<key>Glass Pane</key>
+	<integer>102</integer>
+	<key>Melon</key>
+	<integer>103</integer>
+	<key>Pumpkin Stem</key>
+	<integer>104</integer>
+	<key>Melon Stem</key>
+	<integer>105</integer>
+	<key>Vines</key>
+	<integer>106</integer>
+	<key>Fence Gate</key>
+	<integer>107</integer>
+	<key>Brick Stairs</key>
+	<integer>108</integer>
+	<key>Stone Brick Stairs</key>
+	<integer>109</integer>
+	<key>Mycelium</key>
+	<integer>110</integer>
+	<key>Lily Pad</key>
+	<integer>111</integer>
+	<key>Nether Brick</key>
+	<integer>112</integer>
+	<key>Nether Brick Fence</key>
+	<integer>113</integer>
+	<key>Nether Brick Stairs</key>
+	<integer>114</integer>
+	<key>Nether Wart</key>
+	<integer>115</integer>
+	<key>Enchantment Table</key>
+	<integer>116</integer>
+	<key>Brewing Stand</key>
+	<integer>117</integer>
+	<key>Cauldron</key>
+	<integer>118</integer>
+	<key>End Portal</key>
+	<integer>119</integer>
+	<key>End Portal Frame</key>
+	<integer>120</integer>
+	<key>End Stone</key>
+	<integer>121</integer>
+	<key>Dragon Egg</key>
+	<integer>122</integer>
+	<key>Redstone Lamp (off)</key>
+	<integer>123</integer>
+	<key>Redstone Lamp (on)</key>
+	<integer>124</integer>
+</dict>
+</plist>

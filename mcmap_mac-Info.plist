@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array/>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>help</string>
+	<key>CFBundleHelpBookName</key>
+	<string>MCMap Help</string>
+	<key>CFBundleIconFile</key>
+	<string>MCMap-Live</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.oe.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.5.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array/>
+	<key>CFBundleVersion</key>
+	<string>1.5.0</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
+	<key>NSExportableTypes</key>
+	<array>
+		<string>public.plain-text</string>
+		<string>public.png</string>
+		<string>com.microsoft.bmp</string>
+	</array>
+	<key>NSHumanReadableCopyright</key>
+	<string>MCMap Live originally created by Donkey Kong, updated by Voikya. No copyright claimed. MCMap created by Zahl.</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSServices</key>
+	<array/>
+	<key>SUAllowsAutomaticUpdates</key>
+	<true/>
+	<key>SUFeedURL</key>
+	<string>http://dl.dropbox.com/u/37050628/MCMapLive/updates.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+	<key>SUScheduledCheckInterval</key>
+	<integer>43200</integer>
+	<key>UTExportedTypeDeclarations</key>
+	<array/>
+	<key>UTImportedTypeDeclarations</key>
+	<array/>
+</dict>
+</plist>
