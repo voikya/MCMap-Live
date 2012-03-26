@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1459A09C126CE92C00F36C45 /* extractcolors.h in Sources */ = {isa = PBXBuildFile; fileRef = 1459A09B126CE92C00F36C45 /* extractcolors.h */; };
+		145D5FD7127E49A200226D8C /* rendering_selection.png in Resources */ = {isa = PBXBuildFile; fileRef = 145D5FD5127E49A200226D8C /* rendering_selection.png */; };
+		145D5FD8127E49A200226D8C /* rendering_world.png in Resources */ = {isa = PBXBuildFile; fileRef = 145D5FD6127E49A200226D8C /* rendering_world.png */; };
+		146763B2127361FE00C06D3A /* tiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 146763B1127361FE00C06D3A /* tiles.plist */; };
+		146764171273830C00C06D3A /* BlockFinderPanelController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 146764161273830C00C06D3A /* BlockFinderPanelController.mm */; };
+		1471CF2912656BE3005667DD /* MapChunk.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1471CF2812656BE3005667DD /* MapChunk.mm */; };
+		14730317126AF6D10068F97A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14730316126AF6D10068F97A /* Sparkle.framework */; };
+		1473032D126AF7350068F97A /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14730316126AF6D10068F97A /* Sparkle.framework */; };
+		1473043B126B99490068F97A /* rendering.png in Resources */ = {isa = PBXBuildFile; fileRef = 14730439126B99490068F97A /* rendering.png */; };
+		1473043C126B99490068F97A /* begin.png in Resources */ = {isa = PBXBuildFile; fileRef = 1473043A126B99490068F97A /* begin.png */; };
+		14730532126BC2FF0068F97A /* Colors in Resources */ = {isa = PBXBuildFile; fileRef = 1473052E126BC2FF0068F97A /* Colors */; };
+		148A5BC81274D9AF0061AC55 /* MCMapPrefsController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 148A5BC71274D9AF0061AC55 /* MCMapPrefsController.mm */; };
+		148F6609128DCBA000317975 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 148F6608128DCBA000317975 /* libz.dylib */; };
+		148F6613128DCC9A00317975 /* MapInfoPanelController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 148F6612128DCC9A00317975 /* MapInfoPanelController.mm */; };
+		14A9E816125E74900058D2C3 /* mcmap in Resources */ = {isa = PBXBuildFile; fileRef = 14A9E815125E74900058D2C3 /* mcmap */; };
+		14A9E859125F54210058D2C3 /* MCMapOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14A9E857125F54210058D2C3 /* MCMapOpenGLView.mm */; };
+		14A9E8B4125F689F0058D2C3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A9E8B3125F689F0058D2C3 /* OpenGL.framework */; };
+		14A9E8BA125F68C40058D2C3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A9E8B9125F68C40058D2C3 /* GLUT.framework */; };
+		14B1C5FF12892BB600DBF7EB /* MinecraftBiomeExtractor.jar in Resources */ = {isa = PBXBuildFile; fileRef = 14B1C5EB12892A5A00DBF7EB /* MinecraftBiomeExtractor.jar */; };
+		14B1C63D128937A200DBF7EB /* extracting_biome.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B1C63C128937A200DBF7EB /* extracting_biome.png */; };
+		14BD18D7126082000038A3DA /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BD18D6126082000038A3DA /* ApplicationServices.framework */; };
+		14CD03561270E94A00ED2060 /* help in Resources */ = {isa = PBXBuildFile; fileRef = 14CD03531270E94A00ED2060 /* help */; };
+		14CD590B1262F03A00B62A43 /* MCMap-Live.icns in Resources */ = {isa = PBXBuildFile; fileRef = 14CD590A1262F03A00B62A43 /* MCMap-Live.icns */; };
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* mcmap_macAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* mcmap_macAppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D08EB6FC1514604300B64375 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = D08EB6FB1514604300B64375 /* dsa_pub.pem */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1473032C126AF6F80068F97A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1473032D126AF7350068F97A /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1459A09B126CE92C00F36C45 /* extractcolors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extractcolors.h; sourceTree = "<group>"; };
+		145D5FD5127E49A200226D8C /* rendering_selection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rendering_selection.png; sourceTree = "<group>"; };
+		145D5FD6127E49A200226D8C /* rendering_world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rendering_world.png; sourceTree = "<group>"; };
+		146763B1127361FE00C06D3A /* tiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tiles.plist; sourceTree = "<group>"; };
+		146764151273830C00C06D3A /* BlockFinderPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockFinderPanelController.h; sourceTree = "<group>"; };
+		146764161273830C00C06D3A /* BlockFinderPanelController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BlockFinderPanelController.mm; sourceTree = "<group>"; };
+		1471CF2712656BE3005667DD /* MapChunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapChunk.h; sourceTree = "<group>"; };
+		1471CF2812656BE3005667DD /* MapChunk.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapChunk.mm; sourceTree = "<group>"; };
+		14730316126AF6D10068F97A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		14730439126B99490068F97A /* rendering.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rendering.png; sourceTree = "<group>"; };
+		1473043A126B99490068F97A /* begin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = begin.png; sourceTree = "<group>"; };
+		1473052E126BC2FF0068F97A /* Colors */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = Colors; sourceTree = "<group>"; };
+		148A5BC61274D9AF0061AC55 /* MCMapPrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMapPrefsController.h; sourceTree = "<group>"; };
+		148A5BC71274D9AF0061AC55 /* MCMapPrefsController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCMapPrefsController.mm; sourceTree = "<group>"; };
+		148F6608128DCBA000317975 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		148F6611128DCC9A00317975 /* MapInfoPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapInfoPanelController.h; sourceTree = "<group>"; };
+		148F6612128DCC9A00317975 /* MapInfoPanelController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapInfoPanelController.mm; sourceTree = "<group>"; };
+		14A9E815125E74900058D2C3 /* mcmap */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mcmap; sourceTree = "<group>"; };
+		14A9E857125F54210058D2C3 /* MCMapOpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MCMapOpenGLView.mm; sourceTree = "<group>"; };
+		14A9E858125F54210058D2C3 /* MCMapOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMapOpenGLView.h; sourceTree = "<group>"; };
+		14A9E8B3125F689F0058D2C3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		14A9E8B9125F68C40058D2C3 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		14B1C5EB12892A5A00DBF7EB /* MinecraftBiomeExtractor.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = MinecraftBiomeExtractor.jar; sourceTree = "<group>"; };
+		14B1C63C128937A200DBF7EB /* extracting_biome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = extracting_biome.png; sourceTree = "<group>"; };
+		14BD18D6126082000038A3DA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		14CD03531270E94A00ED2060 /* help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = help; sourceTree = "<group>"; };
+		14CD590A1262F03A00B62A43 /* MCMap-Live.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "MCMap-Live.icns"; sourceTree = "<group>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* mcmap_macAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcmap_macAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* mcmap_macAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcmap_macAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* mcmap_mac_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcmap_mac_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* mcmap_mac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mcmap_mac-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* MCMap Live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MCMap Live.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08EB6FB1514604300B64375 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				14A9E8B4125F689F0058D2C3 /* OpenGL.framework in Frameworks */,
+				14A9E8BA125F68C40058D2C3 /* GLUT.framework in Frameworks */,
+				14BD18D7126082000038A3DA /* ApplicationServices.framework in Frameworks */,
+				14730317126AF6D10068F97A /* Sparkle.framework in Frameworks */,
+				148F6609128DCBA000317975 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1471CF2812656BE3005667DD /* MapChunk.mm */,
+				1471CF2712656BE3005667DD /* MapChunk.h */,
+				14A9E857125F54210058D2C3 /* MCMapOpenGLView.mm */,
+				14A9E858125F54210058D2C3 /* MCMapOpenGLView.h */,
+				256AC3D80F4B6AC300CF3369 /* mcmap_macAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* mcmap_macAppDelegate.m */,
+				148F6611128DCC9A00317975 /* MapInfoPanelController.h */,
+				148F6612128DCC9A00317975 /* MapInfoPanelController.mm */,
+				146764151273830C00C06D3A /* BlockFinderPanelController.h */,
+				146764161273830C00C06D3A /* BlockFinderPanelController.mm */,
+				148A5BC61274D9AF0061AC55 /* MCMapPrefsController.h */,
+				148A5BC71274D9AF0061AC55 /* MCMapPrefsController.mm */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14730316126AF6D10068F97A /* Sparkle.framework */,
+				14BD18D6126082000038A3DA /* ApplicationServices.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				14A9E8B9125F68C40058D2C3 /* GLUT.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				14A9E8B3125F689F0058D2C3 /* OpenGL.framework */,
+				148F6608128DCBA000317975 /* libz.dylib */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* MCMap Live.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* mcmap-mac */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "mcmap-mac";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1459A09B126CE92C00F36C45 /* extractcolors.h */,
+				256AC3F00F4B6AF500CF3369 /* mcmap_mac_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D08EB6FB1514604300B64375 /* dsa_pub.pem */,
+				146763B1127361FE00C06D3A /* tiles.plist */,
+				14CD03531270E94A00ED2060 /* help */,
+				1473052E126BC2FF0068F97A /* Colors */,
+				145D5FD5127E49A200226D8C /* rendering_selection.png */,
+				14B1C63C128937A200DBF7EB /* extracting_biome.png */,
+				145D5FD6127E49A200226D8C /* rendering_world.png */,
+				14730439126B99490068F97A /* rendering.png */,
+				1473043A126B99490068F97A /* begin.png */,
+				14CD590A1262F03A00B62A43 /* MCMap-Live.icns */,
+				14A9E815125E74900058D2C3 /* mcmap */,
+				14B1C5EB12892A5A00DBF7EB /* MinecraftBiomeExtractor.jar */,
+				8D1107310486CEB800E47090 /* mcmap_mac-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* MCMap Live */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MCMap Live" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				1473032C126AF6F80068F97A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MCMap Live";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "mcmap-mac";
+			productReference = 8D1107320486CEB800E47090 /* MCMap Live.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MCMap Live" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Spanish,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* mcmap-mac */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* MCMap Live */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				14A9E816125E74900058D2C3 /* mcmap in Resources */,
+				14B1C5FF12892BB600DBF7EB /* MinecraftBiomeExtractor.jar in Resources */,
+				14CD590B1262F03A00B62A43 /* MCMap-Live.icns in Resources */,
+				1473043B126B99490068F97A /* rendering.png in Resources */,
+				1473043C126B99490068F97A /* begin.png in Resources */,
+				14730532126BC2FF0068F97A /* Colors in Resources */,
+				14CD03561270E94A00ED2060 /* help in Resources */,
+				146763B2127361FE00C06D3A /* tiles.plist in Resources */,
+				145D5FD7127E49A200226D8C /* rendering_selection.png in Resources */,
+				145D5FD8127E49A200226D8C /* rendering_world.png in Resources */,
+				14B1C63D128937A200DBF7EB /* extracting_biome.png in Resources */,
+				D08EB6FC1514604300B64375 /* dsa_pub.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* mcmap_macAppDelegate.m in Sources */,
+				14A9E859125F54210058D2C3 /* MCMapOpenGLView.mm in Sources */,
+				1471CF2912656BE3005667DD /* MapChunk.mm in Sources */,
+				1459A09C126CE92C00F36C45 /* extractcolors.h in Sources */,
+				146764171273830C00C06D3A /* BlockFinderPanelController.mm in Sources */,
+				148A5BC81274D9AF0061AC55 /* MCMapPrefsController.mm in Sources */,
+				148F6613128DCC9A00317975 /* MapInfoPanelController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mcmap_mac_Prefix.pch;
+				INFOPLIST_FILE = "mcmap_mac-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "MCMap Live";
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mcmap_mac_Prefix.pch;
+				INFOPLIST_FILE = "mcmap_mac-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "MCMap Live";
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MCMap Live" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MCMap Live" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
