@@ -48,6 +48,7 @@ typedef struct {
     IBOutlet NSMenuItem * netherMenuItem;
     IBOutlet NSMenuItem * endMenuItem;
     IBOutlet NSMenuItem * showplayersMenuItem;
+    IBOutlet NSMenuItem * hideWaterMenuItem;
     
     // Colors
     IBOutlet NSMenu * colorsMenu;
@@ -125,6 +126,7 @@ typedef struct {
 -(IBAction) setOrientation: (id) sender;
 -(IBAction) setColors: (id) sender;
 -(IBAction) showPlayerLocations: (id) sender;
+-(IBAction) toggleHideWater: (id) sender;
 -(IBAction) resetView: (id) sender;
 -(IBAction) flushCache: (id) sender;
 

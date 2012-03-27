@@ -836,6 +836,40 @@ static void screen2blockf(float x, float y, float* boxCoords)
 
 }
 
+-(IBAction) toggleHideWater: (id) sender
+{
+    if ([hideWaterMenuItem state] == NSOffState) {
+        [hideWaterMenuItem setState:NSOnState];
+        colors_path = @"/tmp/colors.txt";
+        MinecraftColors colors;        
+        
+        // Load the current color set
+        [self createColorArrayFromTextFile:[NSString stringWithFormat:@"%@/Colors/Minecraft.txt", [[NSBundle mainBundle] resourcePath]] colorArray:&colors];
+        
+        // Lower transparency and lighten color of water
+        colors.c[8][0] = 82;
+        colors.c[8][1] = 121;
+        colors.c[8][2] = 188;
+        colors.c[8][3] = 8; // Water
+        colors.c[9][0] = 82;
+        colors.c[9][1] = 121;
+        colors.c[9][2] = 188;
+        colors.c[9][3] = 8; // Standing Water
+        
+        // Write out the new file
+        [self writeColorsFromArray:&colors savePath:colors_path];
+        
+        // Tell the map that new colors were set
+        [self setColors:Nil];
+        
+    } else {
+        [hideWaterMenuItem setState:NSOffState];
+        colors_path = @"placeholder";
+        [self setColors:Nil];
+        [self setColors: defaultcolorsMenuItem];
+    }
+}
+
 -(IBAction) resetView: (id) sender
 {
     // 0 = (x,y)
