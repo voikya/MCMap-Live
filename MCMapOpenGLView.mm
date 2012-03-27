@@ -1287,7 +1287,7 @@ static void screen2blockf(float x, float y, float* boxCoords)
 -(void)magnifyWithEvent:(NSEvent *)anEvent
 {
         userTimer = userTimerReset;
-        zoom_level -= ([anEvent deltaZ]*0.001);
+        zoom_level -= ([anEvent magnification]*0.5);
         if (zoom_level > 5)
             zoom_level = 5;
         if (zoom_level < -1.5)
