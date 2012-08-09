@@ -321,7 +321,7 @@ void MapChunk::invalidate()
     if (renderer!=Nil) // If the texture was already invalid, this is fine too.
     {
         [renderer terminate];
-        [renderer waitUntilExit];
+        //[renderer waitUntilExit];
         [renderer release];
         renderer = Nil;
     }

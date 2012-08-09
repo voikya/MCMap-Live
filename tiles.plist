@@ -276,5 +276,29 @@
 	<integer>123</integer>
 	<key>Redstone Lamp (on)</key>
 	<integer>124</integer>
+	<key>Wooden Double Step</key>
+	<integer>125</integer>
+	<key>Wooden Step</key>
+	<integer>126</integer>
+	<key>Cocoa Plant</key>
+	<integer>127</integer>
+	<key>Sandstone Stairs</key>
+	<integer>128</integer>
+	<key>Emerald Ore</key>
+	<integer>129</integer>
+	<key>Ender Chest</key>
+	<integer>130</integer>
+	<key>Tripwire Hook</key>
+	<integer>131</integer>
+	<key>Tripwire</key>
+	<integer>132</integer>
+	<key>Emerald Block</key>
+	<integer>133</integer>
+	<key>Spruce Wood Stairs</key>
+	<integer>134</integer>
+	<key>Birch Wood Stairs</key>
+	<integer>135</integer>
+	<key>Jungle Wood Stairs</key>
+	<integer>136</integer>
 </dict>
 </plist>

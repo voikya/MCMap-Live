@@ -472,8 +472,8 @@ static void screen2blockf(float x, float y, float* boxCoords)
     newdepth = [depthSlider intValue];
     if (newdepth < 1)
         newdepth = 1;
-    else if (newdepth > 256)
-        newdepth = 256;
+    else if (newdepth > 255)
+        newdepth = 255;
     
     // Newdepth will be set by the draw function if it decides this would be prudent.
 }
@@ -1386,9 +1386,13 @@ static void screen2blockf(float x, float y, float* boxCoords)
         if (maxdepth != newdepth)
         {
             maxdepth = newdepth;
+            NSLog(@"Stop 1\n");
             [depthIndicator setTitleWithMnemonic: [NSString stringWithFormat: @"%i",maxdepth]];
+            NSLog(@"Stop 2\n");
             [self setupMapChunk];
+            NSLog(@"Stop 3\n");
             [self invalidateAllChunks];
+            NSLog(@"Stop 4\n");
         }
         //[statusTextField setTitleWithMnemonic: [NSString stringWithFormat: @"Depth: %i",maxdepth]];
     
