@@ -64,7 +64,7 @@ BOOL color_stored = NO;
     // Populate the Blockfinder Menu
     
     [blockSelector setAutoenablesItems:NO];
-    for (NSString* tilename in [minecraft_blocks keysSortedByValueUsingSelector:@selector(compare:)]) 
+    for (NSString* tilename in [[minecraft_blocks allKeys] sortedArrayUsingSelector:@selector(compare:)])
     {
         NSMenuItem* tileitem = [[NSMenuItem alloc] initWithTitle:tilename action:@selector(selectBlock:) keyEquivalent:@""]; 
         [blockFinderMenu addItem:tileitem];
