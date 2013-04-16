@@ -435,8 +435,8 @@ void MapChunk::startRenderer()
         // Setup the renderer
         [renderer setArguments: these_settings];
         // Make certain output goes to null
-        [renderer setStandardOutput: [NSFileHandle fileHandleWithNullDevice]];
-		[renderer setStandardError: [NSFileHandle fileHandleWithNullDevice]];
+//      [renderer setStandardOutput: [NSFileHandle fileHandleWithNullDevice]];
+//		[renderer setStandardError: [NSFileHandle fileHandleWithNullDevice]];
 
         
         

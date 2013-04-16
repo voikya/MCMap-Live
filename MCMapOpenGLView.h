@@ -49,6 +49,7 @@ typedef struct {
     IBOutlet NSMenuItem * endMenuItem;
     IBOutlet NSMenuItem * showplayersMenuItem;
     IBOutlet NSMenuItem * hideWaterMenuItem;
+    IBOutlet NSMenuItem * mystCraftAgesMenuItem;
     
     // Colors
     IBOutlet NSMenu * colorsMenu;

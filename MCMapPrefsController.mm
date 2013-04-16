@@ -23,7 +23,7 @@ NSMutableArray* user_colors;
 
 - (IBAction)setMaxRenderers:(id)sender
 {
-    [numberOfRenderers setTitleWithMnemonic:[NSString stringWithFormat:@"&%i",[sender integerValue]]];
+    [numberOfRenderers setTitleWithMnemonic:[NSString stringWithFormat:@"%d", [sender intValue]]];
     [mapview setMaxSimultaneousRenders:[sender integerValue]];
 }
 
