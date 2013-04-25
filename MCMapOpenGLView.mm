@@ -14,6 +14,10 @@
 
 typedef enum RenderLightingModes {UNIFORM, DAY, NIGHT, TORCHLIGHT, CAVE} LightingMode;
 
+static NSString *OVERWORLD_DIMENSION_PATH = @"region";
+static NSString *END_DIMENSION_PATH = @"DIM1/region";
+static NSString *NETHER_DIMENSION_PATH = @"DIM-1/region";
+
 recVec gOrigin = {0.0, 0.0, 0.0};
 
 
@@ -30,7 +34,8 @@ bool useMipMaps = YES;
 bool worldLoaded = NO;
 std::set< std::pair<int,int> > hasContent;
 MapChunk **worldmap = NULL;
-int dimension = 0;  // 0=regular world, 1=nether, 2=end
+NSString *dimensionPath = [OVERWORLD_DIMENSION_PATH retain];
+NSInteger mystAge = 0;
 NSSavePanel* currentsavepanel;
 
 int nox,noy,nmx,nmy;
@@ -159,7 +164,7 @@ GLenum glReportError (void)
 	GLenum err = glGetError();
 	if (GL_NO_ERROR != err)
     {
-		reportError ((char *) gluErrorString (err));
+		char *reportError = ((char *) gluErrorString (err));
         NSLog(@"OpenGL Error: %s",reportError);
     }
 	return err;
@@ -452,6 +457,30 @@ static void screen2blockf(float x, float y, float* boxCoords)
     if (userTimer > 0)
         userTimer--;
     [ self setNeedsDisplay: YES ] ;
+}
+
+- (void) rebuildMystCraftMenu:(NSString*)worldPath
+{
+    NSMenu *mystMenu = mystCraftAgesMenuItem.submenu;
+    [mystMenu removeAllItems];
+
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    for (NSString *file in [fileManager contentsOfDirectoryAtPath:worldPath error:nil])
+    {
+        NSRange range = [file rangeOfString:@"DIM_MYST"];
+        if (range.location == NSNotFound) continue;
+
+        NSInteger ageNumber = [[file substringFromIndex:(range.location + range.length)] integerValue];
+        if (!ageNumber) continue;
+
+        NSString *menuItemTitle = [NSString stringWithFormat:@"Age %ld", (long)ageNumber];
+        NSMenuItem *nextAgeItem = [[NSMenuItem alloc] initWithTitle:menuItemTitle
+            action:@selector(setDimensionToMystCraftAge:) keyEquivalent:@""];
+        nextAgeItem.tag = ageNumber;
+
+        [mystMenu addItem:nextAgeItem];
+        [mystCraftAgesMenuItem setEnabled:YES];
+    }
 }
 
 // ---------------------------------
@@ -1867,6 +1896,7 @@ static void screen2blockf(float x, float y, float* boxCoords)
         [self resetForNewWorld:YES];
     
     [self scanAndInitWorld:current_world_path newBounds:YES];
+    [self rebuildMystCraftMenu:current_world_path];
     [self resetView:Nil];
     [self setupMapChunk];
     
@@ -1882,9 +1912,8 @@ static void screen2blockf(float x, float y, float* boxCoords)
     NSString* colortxt = [NSString stringWithContentsOfFile:textpath encoding:NSASCIIStringEncoding error:err];
 
     if (err) {
-            NSLog(@"Bad text file: %@", err);
-            return NO;
-            }
+        return NO;
+    }
     
     NSArray* lines = [colortxt componentsSeparatedByString:@"\n"];
     
@@ -2040,7 +2069,7 @@ static void screen2blockf(float x, float y, float* boxCoords)
     }
 }
 
--(void) scanAndInitWorld:(NSString*)world_path newBounds:(BOOL)newBounds
+-(void) scanAndInitWorld:(NSString*)worldPath newBounds:(BOOL)newBounds
 {
     if (worldmap!=NULL)
     {   
@@ -2053,19 +2082,14 @@ static void screen2blockf(float x, float y, float* boxCoords)
         BOOL isDir=NO;
         NSArray *possibleRegions;
         NSFileManager *fileManager = [[NSFileManager alloc] init];
+
+        NSString *currentDimensionPath = [NSString stringWithFormat:@"%@/%@", worldPath, dimensionPath];
         
-        if (dimension == 1)
+        if ([fileManager fileExistsAtPath:currentDimensionPath isDirectory:&isDir] && isDir)
         {
-            world_path = [NSString stringWithFormat: @"%@/DIM-1/region", world_path];
+            [fileManager changeCurrentDirectoryPath:currentDimensionPath];
         }
-        else
-        {
-            world_path = [NSString stringWithFormat: @"%@/region", world_path];
-        }
-        
-        if ([fileManager fileExistsAtPath:world_path isDirectory:&isDir] && isDir)
-            [fileManager changeCurrentDirectoryPath:world_path];
-        possibleRegions = [fileManager contentsOfDirectoryAtPath:world_path error:nil];
+        possibleRegions = [fileManager contentsOfDirectoryAtPath:currentDimensionPath error:nil];
         
         int minX=0;
         int minY=0;
@@ -2576,13 +2600,23 @@ if (!processing){
         [render_settings addObject: [NSString stringWithFormat: @"%i",noise_level]];
     }
     
-    if (showBiomes && dimension == 0)
-        [render_settings addObject: @"-biomes"];
-    
-    if (dimension == 1) {
+    if ([NETHER_DIMENSION_PATH isEqualToString:dimensionPath])
+    {
         [render_settings addObject: @"-nether"];
-    } else if (dimension == 2) {
+    }
+    else if ([END_DIMENSION_PATH isEqualToString:dimensionPath])
+    {
         [render_settings addObject: @"-end"];
+    }
+    else
+    {
+        if (showBiomes)
+            [render_settings addObject: @"-biomes"];
+
+        if ([dimensionPath rangeOfString:@"MYST"].location != NSNotFound) {
+            [render_settings addObject:@"-mystcraftage"];
+            [render_settings addObject:[NSString stringWithFormat:@"%ld", (long) mystAge]];
+        }
     }
     
     [render_settings addObject: @"-height"];
@@ -2611,23 +2645,29 @@ if (!processing){
     MapChunk::setupClass(renderingTexture, mcmap_path, temp_dir, render_settings);
 }
 
+- (void) clearDimensionMenuItems
+{
+    [endMenuItem setState:NSOffState];
+    [netherMenuItem setState:NSOffState];
+    for (NSMenuItem *ageItem in [mystCraftAgesMenuItem.submenu itemArray])
+    {
+        [ageItem setState:NSOffState];
+    }
+    mystAge = 0;
+}
+
 - (IBAction) setDimensionToNether:(id)sender
 {
-    switch (dimension)
+    [self clearDimensionMenuItems];
+
+    if ([NETHER_DIMENSION_PATH isEqualToString:dimensionPath])
     {
-        case 0: // If default, switch to Nether
-            dimension = 1;
-            [netherMenuItem setState:NSOnState];
-            break;
-        case 1: // If Nether, switch to default
-            dimension = 0;
-            [netherMenuItem setState:NSOffState];
-            break;
-        case 2: // If End, switch to Nether
-            dimension = 1;
-            [netherMenuItem setState:NSOnState];
-            [endMenuItem setState:NSOffState];
-            break;
+        dimensionPath = OVERWORLD_DIMENSION_PATH;
+    }
+    else
+    {
+        dimensionPath = NETHER_DIMENSION_PATH;
+        [netherMenuItem setState:NSOnState];
     }
     
     if (worldLoaded)
@@ -2641,21 +2681,41 @@ if (!processing){
 
 - (IBAction) setDimensionToEnd:(id)sender
 {
-    switch (dimension)
+    [self clearDimensionMenuItems];
+
+    if ([END_DIMENSION_PATH isEqualToString:dimensionPath])
     {
-        case 0: // If default, switch to End
-            dimension = 2;
-            [endMenuItem setState:NSOnState];
-            break;
-        case 1: // If Nether, switch to End
-            dimension = 2;
-            [endMenuItem setState:NSOnState];
-            [netherMenuItem setState:NSOffState];
-            break;
-        case 2: // If End, switch to default
-            dimension = 0;
-            [endMenuItem setState:NSOffState];
-            break;
+        [dimensionPath release];
+        dimensionPath = [OVERWORLD_DIMENSION_PATH retain];
+    }
+    else
+    {
+        [dimensionPath release];
+        dimensionPath = [END_DIMENSION_PATH retain];
+        [endMenuItem setState:NSOnState];
+    }
+    
+    if (worldLoaded)
+    {
+        [self resetForNewWorld:NO];
+        [self scanAndInitWorld:current_world_path newBounds:YES];
+        [self resetView:Nil];
+        [self setupMapChunk];
+    }
+}
+
+- (IBAction) setDimensionToMystCraftAge:(NSMenuItem*)sender
+{
+    if ([sender state] == NSOnState) {
+        [self clearDimensionMenuItems];
+        [dimensionPath release];
+        dimensionPath = [OVERWORLD_DIMENSION_PATH retain];
+    } else {
+        [self clearDimensionMenuItems];
+        [sender setState:NSOnState];
+        [dimensionPath release];
+        dimensionPath = [[NSString stringWithFormat:@"DIM_MYST%ld/region", sender.tag] retain];
+        mystAge = sender.tag;
     }
     
     if (worldLoaded)
