@@ -1,3 +1,8 @@
-build
-xcuserdata
-project.xcworkspace
+.DS_Store
+xcuserdata/
+*.build/
+build/
+DerivedData/
+.svn
+.xcodeproj/ !*.xcodeproj/project.pbxproj
+

@@ -300,5 +300,37 @@
 	<integer>135</integer>
 	<key>Jungle Wood Stairs</key>
 	<integer>136</integer>
+	<key>Command Block</key>
+	<integer>137</integer>
+	<key>Beacon</key>
+	<integer>138</integer>
+	<key>Cobblestone Wall</key>
+	<integer>139</integer>
+	<key>Flower Pot</key>
+	<integer>140</integer>
+	<key>Anvil</key>
+	<integer>145</integer>
+	<key>Daylight Sensor</key>
+	<integer>151</integer>
+	<key>Redstone Block</key>
+	<integer>152</integer>
+	<key>Nether Quartz Ore</key>
+	<integer>153</integer>
+	<key>Hopper</key>
+	<integer>154</integer>
+	<key>Quartz Block</key>
+	<integer>155</integer>
+	<key>Dropper</key>
+	<integer>158</integer>
+	<key>Stained Clay</key>
+	<integer>159</integer>
+	<key>Hay Bale</key>
+	<integer>170</integer>
+	<key>Carpet</key>
+	<integer>171</integer>
+	<key>Hardened Clay</key>
+	<integer>172</integer>
+	<key>Coal Block</key>
+	<integer>173</integer>
 </dict>
 </plist>
