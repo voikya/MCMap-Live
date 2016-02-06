@@ -23,13 +23,13 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.5.5</string>
+	<string>1.6.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
 	<array/>
 	<key>CFBundleVersion</key>
-	<string>1.5.5</string>
+	<string>1.6.2</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSExportableTypes</key>
@@ -39,7 +39,7 @@
 		<string>com.microsoft.bmp</string>
 	</array>
 	<key>NSHumanReadableCopyright</key>
-	<string>MCMap Live originally created by Donkey Kong, updated by Voikya. No copyright claimed. MCMap created by Zahl.</string>
+	<string>MCMap Live originally created by Donkey Kong, updated by Voikya. No copyright claimed. MCMap created by Zahl, updated by WRIM.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
@@ -49,7 +49,7 @@
 	<key>SUAllowsAutomaticUpdates</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://dl.dropbox.com/u/37050628/MCMapLive/updates.xml</string>
+	<string>https://dl.dropbox.com/u/37050628/MCMapLive/updates.xml</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
 	<key>SUScheduledCheckInterval</key>

@@ -216,7 +216,7 @@
 	<integer>93</integer>
 	<key>Redstone Repeater (on)</key>
 	<integer>94</integer>
-	<key>Locked Chest</key>
+	<key>Stained Glass</key>
 	<integer>95</integer>
 	<key>Trapdoor</key>
 	<integer>96</integer>
@@ -332,5 +332,7 @@
 	<integer>172</integer>
 	<key>Coal Block</key>
 	<integer>173</integer>
+	<key>Packed Ice</key>
+	<integer>174</integer>
 </dict>
 </plist>
